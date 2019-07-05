@@ -1,0 +1,37 @@
+{
+  "name": "@medley/etag",
+  "version": "0.0.0",
+  "description": "Medley plugin for automatic ETag generation & conditional GET responses",
+  "author": "Nathan Woltman <nwoltman@outlook.com>",
+  "license": "MIT",
+  "main": "etag.js",
+  "files": [
+    "etag.js"
+  ],
+  "engines": {
+    "node": ">=8"
+  },
+  "repository": "github:medleyjs/etag",
+  "homepage": "https://github.com/medleyjs/etag",
+  "bugs": "https://github.com/medleyjs/etag/issues",
+  "keywords": [
+    "medley",
+    "plugin",
+    "etag",
+    "conditional-get"
+  ],
+  "devDependencies": {
+    "@medley/medley": "~0.12.1",
+    "@medley/self-request": "~0.3.0",
+    "@nwoltman/eslint-config": "~0.2.1",
+    "coveralls": "^3.0.4",
+    "eslint": "^5.16.0",
+    "mocha": "^6.1.4",
+    "nyc": "^14.1.1"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "test": "eslint . && nyc --reporter=html --reporter=text-summary mocha",
+    "coveralls": "nyc report --reporter=text-lcov | coveralls"
+  }
+}
