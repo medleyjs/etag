@@ -1,6 +1,6 @@
 {
   "name": "@medley/etag",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Medley plugin for automatic ETag generation & conditional GET responses",
   "author": "Nathan Woltman <nwoltman@outlook.com>",
   "license": "MIT",
